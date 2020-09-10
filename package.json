@@ -18,7 +18,8 @@
     "build-testbed": "tsc -p testbed",
     "watch-testbed": "tsc -p testbed --watch",
     "dist-testbed": "(cd testbed && rollup -c)",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run dist-box2d"
   },
   "repository": {
     "type": "git",
