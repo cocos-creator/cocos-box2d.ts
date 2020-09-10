@@ -1,9 +1,8 @@
 {
-  "name": "@flyover/box2d",
-  "version": "1.0.1",
+  "name": "@cocos/box2d",
+  "version": "1.0.0",
   "description": "A TypeScript port of Box2D",
-  "main": "./build/box2d/box2d.umd.js",
-  "types": "./src/box2d.ts",
+  "main": "./index.js",
   "scripts": {
     "build": "npm run build-testbed",
     "build-all": "npm run build-box2d && npm run build-unit-test && npm run build-testbed",
@@ -23,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyover/box2d.ts.git"
+    "url": "git+https://github.com/cocos-creator/box2d.ts.git"
   },
   "author": "Isaac Burns <isaacburns@gmail.com>",
   "license": "Zlib",
   "bugs": {
-    "url": "https://github.com/flyover/box2d.ts/issues"
+    "url": "https://github.com/cocos-creator/box2d.ts/issues"
   },
-  "homepage": "https://github.com/flyover/box2d.ts#readme",
+  "homepage": "https://github.com/cocos-creator/box2d.ts#readme",
   "dependencies": {
     "@types/systemjs": "^0.20.6"
   },

@@ -1,21 +1,14 @@
-System.register(["./src/box2d.js"], function (exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
-    function exportStar_1(m) {
-        var exports = {};
-        for (var n in m) {
-            if (n !== "default") exports[n] = m[n];
-        }
-        exports_1(exports);
+
+const box2d = require('./build/box2d/box2d.umd');
+let b2 = {};
+
+
+for (var key in box2d) {
+    if (key.indexOf('b2_') !== -1) {
+        continue;
     }
-    return {
-        setters: [
-            function (box2d_js_1_1) {
-                exportStar_1(box2d_js_1_1);
-            }
-        ],
-        execute: function () {
-        }
-    };
-});
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIn0=
+    let newKey = key.replace('b2', '');
+    b2[newKey] = box2d[key];
+}
+
+module.exports = b2;
