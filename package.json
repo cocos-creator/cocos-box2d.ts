@@ -1,6 +1,6 @@
 {
   "name": "@cocos/box2d",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript port of Box2D",
   "main": "./index.js",
   "scripts": {
